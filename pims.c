@@ -7,14 +7,16 @@
 #define LOW_STOCK_THRESHOLD 10
 #define EXPIRY_WARNING_DAYS 30
 
-// Structure Definitions
+// Structure Definition
 typedef struct {
     int id;
     char name[50];
     char type[30];
     int quantity;
     float price;
-    char expiryDate[11]; // Format: DD/MM/YYYY
+    char expiryDate[11]; 
+
+// Format: DD/MM/YYYY
 } Medicine;
 
 typedef struct {

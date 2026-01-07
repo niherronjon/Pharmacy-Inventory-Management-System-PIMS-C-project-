@@ -17,6 +17,8 @@ typedef struct {
     char expiryDate[11]; 
 
 // Format: DD/MM/YYYY
+
+
 } Medicine;
 
 typedef struct {
@@ -84,7 +86,8 @@ int getNextSupplierId();
 int getNextTransactionId();
 
 // Main Function
-int main() {
+int main()
+{
     int choice;
 
     printf("\n");
@@ -93,10 +96,12 @@ int main() {
     printf("================================================\n");
     printf("\n");
 
-    while(1) {
+    while(1)
+    {
         mainMenu();
         printf("Enter your choice: ");
-        if (scanf("%d", &choice) != 1) {
+        if(scanf("%d", &choice) != 1)
+        {
             clearInputBuffer();
             printf("\nInvalid input! Please enter a number.\n");
             continue;
